@@ -1,0 +1,19 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Terminal Word Guess Game / Constructor fun!",
+  "main": "Letter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikebly/node-words.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikebly/node-words/issues"
+  },
+  "homepage": "https://github.com/mikebly/node-words#readme"
+}
