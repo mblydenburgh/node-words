@@ -6,6 +6,7 @@ const words = ["test","snake","two words"];
 let randomIndex;
 let guessedLetters = [];
 let selectedWord;
+let alreadyPlayed = false;
 
 function chooseWord(arr){
     randomIndex = randomNumber(arr.length);
@@ -16,9 +17,18 @@ function randomNumber(num){
     return Math.floor(Math.random()*num);
 }
 
+// startGame is responsible for choosing the random word for the next round.
+// if the value of alreadyPlayed is false, the initial welcome message will apear,
+// otherwise a standard message for restarting another round will be shown.
 function startGame(){
-    console.log(`Welcome to word guess!`);
-    console.log(`Selecting word....`);
+    if(!alreadyPlayed){
+        console.log(`Welcome to word guess!`);
+        alreadyPlayed = true;
+    }
+    else{
+        console.log(`Round starting.`)
+        console.log(`Selecting word....`);
+    }
     selectedWord = new Word(chooseWord(words));
     setTimeout(()=>{promptGuess()},2000)
 }
