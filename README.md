@@ -1,5 +1,7 @@
-# node-words
+# Node-Words
 Terminal Word Guess Game / Constructor fun!
+
+This hang-man style game was a little lesson on how to implement constructor functions and creating custom promises.
 
 ## Game Basics
 To run game, clone repository on your local computer and execute 'npm install' to install the game dependencies.
