@@ -13,7 +13,11 @@ function randomNumber(num){
     return Math.floor(Math.random()*num);
 }
 
-console.log(chooseWord(words));
+let word1 = new Word(chooseWord(words));
+// word1.returnWord();
+// word1.checkGuess('e');
+// word1.returnWord();
+
 
 
 // console.log(randomNumber(words.length));
