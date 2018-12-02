@@ -8,6 +8,13 @@ function Word(word){
             return letter.displayCharacter();
         }).join(' ');
         console.log(letterArray);
+        // return letterArray;
+    }
+
+    this.currentState = function(){
+        return (
+            this.wordArray.map(letter=>{return letter.displayCharacter()}).join('')
+        );
     }
 
     this.checkGuess = function(char){
